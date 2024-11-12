@@ -12,3 +12,9 @@ const isDone = props.done
   <input type="checkbox" :id="id" :checked="isDone" />
   <label :for="id">{{ label }}</label>
 </template>
+
+<style lang="css" scoped>
+input + label {
+  margin-left: 0.5em;
+}
+</style>
