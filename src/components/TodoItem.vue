@@ -1,16 +1,11 @@
-<script>
-export default {
-  props: {
-    label: { required: true, type: String },
-    id: { required: true, type: String },
-    done: { default: false, type: Boolean },
-  },
-  data() {
-    return {
-      isDone: this.done,
-    }
-  },
-}
+<script setup>
+const props = defineProps({
+  label: { required: true, type: String },
+  id: { required: true, type: String },
+  done: { default: false, type: Boolean },
+})
+
+const isDone = props.done
 </script>
 
 <template>
